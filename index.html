@@ -1,25 +1,66 @@
 <!doctype html>
+
 <html lang="en">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title>Cientifico</title>
+
     <link href="styles.css" rel="stylesheet">
+
 </head>
 
+
+
 <body>
-    <script> (async function() 
-    { const { text } = await( await fetch(`/api/message`)).json(); 
-    document.querySelector('#Phrase').textContent = text; }()) </script>
-    <h1 style="text-align: center;"><b id="Phrase">...</b></h1>
+
+    <script>
+
+        (async function () {
+
+            const { text } = await (await fetch(`/api/message`)).json();
+
+            document.querySelector('#Phrase').textContent = text;
+
+        }())
+
+    </script>
+
+
+
+
+    <h1 style="text-align:center"><b id="Phrase">...</b></h1>
+
+
+
+
+
     <main class="Main">
+
+
+
         <header class="Header" id="header"></header>
+
         <section id="content">
+
             <div class="loading"></div>
+
         </section>
+
     </main>
+
     <script src="main.js"></script>
+
+    <h5 style="text-align:center">Dev by Andrey Murillo</h5>
+
 </body>
+
+
 
 </html>
