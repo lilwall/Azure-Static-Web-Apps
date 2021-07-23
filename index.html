@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <script> (async function() { const { text } = await( await fetch(`/api/message`)).json(); document.querySelector('#name').textContent = text; }()) </script>
+    <p>Loading content from the API: <b id="name">...</b></p>
     <main class="Main">
         <header class="Header" id="header"></header>
         <section id="content">
