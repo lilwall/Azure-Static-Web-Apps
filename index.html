@@ -11,8 +11,8 @@
 <body>
     <script> (async function() 
     { const { text } = await( await fetch(`/api/message`)).json(); 
-    document.querySelector('#name').textContent = text; }()) </script>
-    <h1 style="text-align: center;"><b id="Phrase">...</b></h1>
+    document.querySelector('#Phrase').textContent = text; }()) </script>
+    <h1 style="text-align: center;"><b id="hrase">...</b></h1>
     <main class="Main">
         <header class="Header" id="header"></header>
         <section id="content">
